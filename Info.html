@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	        <h1>Student Management System</h1>
+
+
+<form action="Student_Controller" method="post">
+	
+        <label for="id">id:</label>
+    	<input type="number" id="id" name="id" required><br>
+		<br>
+
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <br>
+
+        <label for="age">age:</label>
+        <input type="number" id="age" name="age" required><br>
+        <br>
+
+        <label for="course">course:</label>
+        <input type="text" id="course" name="course" required><br>
+        <br>
+
+        <input type="hidden" name="action" value="Add">
+        <input type="submit" value="Add">
+              
+         </form>
+         
+         <hr>
+
+    <form action="Student_Controller" method="post"   >
+        <input type="hidden" name="action" value="List">
+        <input type="submit" value="List">
+    </form>
+
+</body>
+</html>
